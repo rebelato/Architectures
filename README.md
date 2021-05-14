@@ -37,6 +37,7 @@ O objetivo desse repositório é a compreensão e entendimento de multiplas arqu
 
 - Responsável pelos elementos de ui. A ViewController pode ser responsável pelas requests, mas é opcional.
 
+
 ### Estrutura no projeto
 
 ![imagem](./Sources/mvvm.png)
@@ -65,6 +66,11 @@ O objetivo desse repositório é a compreensão e entendimento de multiplas arqu
 
 - Responsável pelos elementos de ui
 
+
+### Estrutura no projeto
+
+![imagem](./Sources/mvc.png)
+
 ## MVP
 
 ### Links
@@ -89,4 +95,9 @@ O objetivo desse repositório é a compreensão e entendimento de multiplas arqu
 #### View
 
 - Responsável pelos elementos de ui
+
+
+### Estrutura no projeto
+
+![imagem](./Sources/mvp.png)
 
