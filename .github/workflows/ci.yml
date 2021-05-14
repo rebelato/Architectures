@@ -12,6 +12,11 @@ jobs:
         runs-on: macos-latest
         steps:
             - uses: actions/checkout@v2
+
+            - name: Set Gems
+              run: |
+                gem install bundler
+                bundle install
                 
             - name: Select Xcode
               run: sudo xcode-select -switch /Applications/Xcode_12.app
@@ -19,7 +24,6 @@ jobs:
             - name: Build and test
               run: |
                 set -o pipefail
-                slather setup
                 xcodebuild clean build test \
                 -scheme SuperAPP \
                 -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
