@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Coordinator",
+        "repositoryURL": "https://github.com/rebelato/CoordinatorFramework.git",
+        "state": {
+          "branch": null,
+          "revision": "d0053209f0dfdfe7cfd03f173080161cf203f74c",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "NetworkFramework",
+        "repositoryURL": "https://github.com/rebelato/NetworkFramework",
+        "state": {
+          "branch": null,
+          "revision": "d9d29bbf2ddd3358b7a75decc460ce6e6b851a55",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
