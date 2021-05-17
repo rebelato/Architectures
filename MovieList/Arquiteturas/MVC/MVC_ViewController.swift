@@ -10,6 +10,7 @@ import UIKit
 class MVC_ViewController: UIViewController {
     
     internal let navigationTitle: String
+    internal let service: ServiceProtocol
     
     internal var dataSource: [Movie] {
         didSet {
@@ -17,9 +18,10 @@ class MVC_ViewController: UIViewController {
         }
     }
 
-    internal init(title: String) {
+    internal init(title: String, service: ServiceProtocol = Service()) {
         dataSource = []
         navigationTitle = title
+        self.service = service
         super.init(nibName: nil, bundle: nil)
     }
 

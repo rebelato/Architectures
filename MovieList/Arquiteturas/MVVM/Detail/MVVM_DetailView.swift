@@ -17,10 +17,12 @@ internal class MVVM_DetailView: UIView {
 
     internal let titleLabel: UILabel
     internal let overviewLabel: UILabel
+    internal let posterView: UIImageView
 
     internal override init(frame: CGRect) {
         titleLabel = UILabel()
         overviewLabel = UILabel()
+        posterView = UIImageView()
         super.init(frame: frame)
         setupView()
     }
@@ -33,6 +35,7 @@ internal class MVVM_DetailView: UIView {
     private func updateView() {
         titleLabel.text = viewModel?.title
         overviewLabel.text = viewModel?.overview
+        posterView.image = viewModel?.poster
     }
 
 }
@@ -40,12 +43,17 @@ internal class MVVM_DetailView: UIView {
 extension MVVM_DetailView: ViewCodable {
     
     internal func buildHierarchy() {
-        addView(titleLabel, overviewLabel)
+        addView(posterView, titleLabel, overviewLabel)
     }
 
     internal func buildConstraints() {
+        posterView.topAnchor.constraint(equalTo: topAnchor, constant: 90).isActive = true
+        posterView.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0).isActive = true
+        posterView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        posterView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        
         titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0).isActive = true
-        titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: posterView.bottomAnchor, constant: 24).isActive = true
         
         overviewLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 24).isActive = true
         overviewLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24).isActive = true

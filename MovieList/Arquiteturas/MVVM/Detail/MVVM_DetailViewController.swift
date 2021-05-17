@@ -10,8 +10,10 @@ import UIKit
 class MVVM_DetailViewController: UIViewController {
     
     let movie: Movie
+    let service: ServiceProtocol
 
-    internal init(movie: Movie) {
+    internal init(movie: Movie, service: ServiceProtocol = Service()) {
+        self.service = service
         self.movie = movie
         super.init(nibName: nil, bundle: nil)
     }
@@ -22,14 +24,32 @@ class MVVM_DetailViewController: UIViewController {
     }
     
     internal override func loadView() {
-        let view = MVVM_DetailView(frame: .zero)
-        view.viewModel = MVVM_DetailViewModel(movie: movie)
-        self.view = view
+        view = MVVM_DetailView(frame: .zero)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Detail"
+        loadData()
+    }
+    
+    private func loadData() {
+        service.getImageMovie(with: "https://image.tmdb.org/t/p/original\(movie.poster_path)") { result in
+            switch result {
+            case .success(let posterMovie):
+                DispatchQueue.main.async {
+                    self.updateView(with: posterMovie)
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    private func updateView(with image: UIImage?) {
+        if let view = view as? MVVM_DetailView {
+            view.viewModel = MVVM_DetailViewModel(movie: movie, image: image)
+        }
     }
 
 }

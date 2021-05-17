@@ -10,9 +10,11 @@ import UIKit
 class MVVM_ViewController: UIViewController {
     
     let navigationTitle: String
+    let service: ServiceProtocol
 
-    internal init(title: String) {
-        navigationTitle = title
+    internal init(title: String, service: ServiceProtocol = Service()) {
+        self.service = service
+        self.navigationTitle = title
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -32,7 +34,7 @@ class MVVM_ViewController: UIViewController {
     }
     
     private func loadData() {
-        Service().getPopularMovies { result in
+        service.getPopularMovies { result in
             switch result {
             case .success(let movie):
                 DispatchQueue.main.async {

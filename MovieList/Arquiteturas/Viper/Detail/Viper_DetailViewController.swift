@@ -29,13 +29,14 @@ class Viper_DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Detail"
-        presenter?.showMovie(movie: dataSource)
+        presenter?.getPoster(movie: dataSource)
     }
     
-    private func updateView(movie: Movie) {
+    private func updateView(movie: Movie, poster: UIImage?) {
         if let view = view as? MVVM_DetailView {
             view.titleLabel.text = movie.title
             view.overviewLabel.text = movie.overview
+            view.posterView.image = poster
         }
     }
 
@@ -43,8 +44,8 @@ class Viper_DetailViewController: UIViewController {
 
 extension Viper_DetailViewController: DetailPresenterToViewProtocol {
     
-    internal func showMovie(movie: Movie) {
-        updateView(movie: movie)
+    internal func showMovie(movie: Movie, poster: UIImage?) {
+        updateView(movie: movie, poster: poster)
     }
     
 }

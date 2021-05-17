@@ -10,6 +10,7 @@ import UIKit
 class MVP_ViewController: UIViewController {
     
     internal let navigationTitle: String
+    internal let service: ServiceProtocol
     
     internal var dataSource: [Movie] {
         didSet {
@@ -19,9 +20,10 @@ class MVP_ViewController: UIViewController {
     
     private var presenter: MVP_PresenterProtocol?
 
-    internal init(title: String) {
+    internal init(title: String, service: ServiceProtocol = Service()) {
         dataSource = []
         navigationTitle = title
+        self.service = service
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -45,7 +47,7 @@ class MVP_ViewController: UIViewController {
     }
     
     private func configurePresenter() {
-        presenter = MVP_Presenter(service: Service())
+        presenter = MVP_Presenter(service: service)
         presenter?.delegate = self
     }
     
