@@ -36,6 +36,16 @@
 		B138A857264F2E53000F28CE /* MVP_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138A856264F2E53000F28CE /* MVP_ViewController.swift */; };
 		B138A85C264F2E5F000F28CE /* MVP_Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138A85B264F2E5F000F28CE /* MVP_Presenter.swift */; };
 		B138A862264F3089000F28CE /* MVPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138A861264F3089000F28CE /* MVPCoordinator.swift */; };
+		B1E399C5265307270019C42D /* Viper_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399C4265307270019C42D /* Viper_ViewController.swift */; };
+		B1E399CA2653073E0019C42D /* ViperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399C92653073E0019C42D /* ViperProtocols.swift */; };
+		B1E399CF2653074D0019C42D /* Viper_Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399CE2653074D0019C42D /* Viper_Presenter.swift */; };
+		B1E399D4265307570019C42D /* Viper_Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399D3265307570019C42D /* Viper_Interactor.swift */; };
+		B1E399D9265307620019C42D /* Viper_Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399D8265307620019C42D /* Viper_Router.swift */; };
+		B1E399DF26530A330019C42D /* Viper_DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399DE26530A330019C42D /* Viper_DetailRouter.swift */; };
+		B1E399E726530A5E0019C42D /* Viper_DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399E626530A5E0019C42D /* Viper_DetailProtocols.swift */; };
+		B1E399EC26530B910019C42D /* Viper_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399EB26530B910019C42D /* Viper_DetailViewController.swift */; };
+		B1E399F126530B9D0019C42D /* Viper_DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399F026530B9D0019C42D /* Viper_DetailPresenter.swift */; };
+		B1E399F726530DC60019C42D /* ViperCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399F626530DC60019C42D /* ViperCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +99,16 @@
 		B138A856264F2E53000F28CE /* MVP_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_ViewController.swift; sourceTree = "<group>"; };
 		B138A85B264F2E5F000F28CE /* MVP_Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_Presenter.swift; sourceTree = "<group>"; };
 		B138A861264F3089000F28CE /* MVPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCoordinator.swift; sourceTree = "<group>"; };
+		B1E399C4265307270019C42D /* Viper_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_ViewController.swift; sourceTree = "<group>"; };
+		B1E399C92653073E0019C42D /* ViperProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperProtocols.swift; sourceTree = "<group>"; };
+		B1E399CE2653074D0019C42D /* Viper_Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_Presenter.swift; sourceTree = "<group>"; };
+		B1E399D3265307570019C42D /* Viper_Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_Interactor.swift; sourceTree = "<group>"; };
+		B1E399D8265307620019C42D /* Viper_Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_Router.swift; sourceTree = "<group>"; };
+		B1E399DE26530A330019C42D /* Viper_DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_DetailRouter.swift; sourceTree = "<group>"; };
+		B1E399E626530A5E0019C42D /* Viper_DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_DetailProtocols.swift; sourceTree = "<group>"; };
+		B1E399EB26530B910019C42D /* Viper_DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_DetailViewController.swift; sourceTree = "<group>"; };
+		B1E399F026530B9D0019C42D /* Viper_DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_DetailPresenter.swift; sourceTree = "<group>"; };
+		B1E399F626530DC60019C42D /* ViperCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +261,7 @@
 		B138A7EC264F183F000F28CE /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				B1E399F526530DB30019C42D /* Viper */,
 				B138A860264F307C000F28CE /* MVP */,
 				B138A817264F213D000F28CE /* MVC */,
 				B138A800264F1997000F28CE /* MVVM */,
@@ -286,6 +307,7 @@
 		B138A845264F2BB0000F28CE /* Arquiteturas */ = {
 			isa = PBXGroup;
 			children = (
+				B1E399BD265306FE0019C42D /* Viper */,
 				B138A7D4264F1337000F28CE /* MVP */,
 				B138A7D3264F1332000F28CE /* MVC */,
 				B138A7D2264F1327000F28CE /* MVVM */,
@@ -299,6 +321,38 @@
 				B138A861264F3089000F28CE /* MVPCoordinator.swift */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		B1E399BD265306FE0019C42D /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				B1E399DD26530A1F0019C42D /* Detail */,
+				B1E399C4265307270019C42D /* Viper_ViewController.swift */,
+				B1E399C92653073E0019C42D /* ViperProtocols.swift */,
+				B1E399CE2653074D0019C42D /* Viper_Presenter.swift */,
+				B1E399D3265307570019C42D /* Viper_Interactor.swift */,
+				B1E399D8265307620019C42D /* Viper_Router.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		B1E399DD26530A1F0019C42D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B1E399DE26530A330019C42D /* Viper_DetailRouter.swift */,
+				B1E399E626530A5E0019C42D /* Viper_DetailProtocols.swift */,
+				B1E399EB26530B910019C42D /* Viper_DetailViewController.swift */,
+				B1E399F026530B9D0019C42D /* Viper_DetailPresenter.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B1E399F526530DB30019C42D /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				B1E399F626530DC60019C42D /* ViperCoordinator.swift */,
+			);
+			path = Viper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,13 +492,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E399DF26530A330019C42D /* Viper_DetailRouter.swift in Sources */,
 				B138A7E3264F1411000F28CE /* MVVM_View.swift in Sources */,
+				B1E399C5265307270019C42D /* Viper_ViewController.swift in Sources */,
 				B138A7E8264F1540000F28CE /* MVVM_ViewModel.swift in Sources */,
 				B138A823264F2266000F28CE /* MVVM_DetailView.swift in Sources */,
 				B138A77B264F0AFC000F28CE /* MVVM_ViewController.swift in Sources */,
+				B1E399F126530B9D0019C42D /* Viper_DetailPresenter.swift in Sources */,
 				B138A835264F28EC000F28CE /* MVC_DetailViewController.swift in Sources */,
 				B138A7C2264F0D37000F28CE /* Service.swift in Sources */,
+				B1E399D4265307570019C42D /* Viper_Interactor.swift in Sources */,
+				B1E399CF2653074D0019C42D /* Viper_Presenter.swift in Sources */,
+				B1E399F726530DC60019C42D /* ViperCoordinator.swift in Sources */,
 				B138A80E264F1FF8000F28CE /* MVC_ViewController.swift in Sources */,
+				B1E399CA2653073E0019C42D /* ViperProtocols.swift in Sources */,
+				B1E399D9265307620019C42D /* Viper_Router.swift in Sources */,
 				B138A819264F214E000F28CE /* MVCCoordinator.swift in Sources */,
 				B138A777264F0AFC000F28CE /* AppDelegate.swift in Sources */,
 				B138A81E264F2217000F28CE /* MVVM_DetailViewController.swift in Sources */,
@@ -454,6 +516,7 @@
 				B138A84A264F2C18000F28CE /* ListView.swift in Sources */,
 				B138A802264F19A6000F28CE /* MVVMEvent.swift in Sources */,
 				B138A862264F3089000F28CE /* MVPCoordinator.swift in Sources */,
+				B1E399EC26530B910019C42D /* Viper_DetailViewController.swift in Sources */,
 				B138A7F6264F1895000F28CE /* TabViewController.swift in Sources */,
 				B138A828264F22BD000F28CE /* MVVM_DetailViewModel.swift in Sources */,
 				B138A779264F0AFC000F28CE /* SceneDelegate.swift in Sources */,
@@ -461,6 +524,7 @@
 				B138A7CB264F101A000F28CE /* Movie.swift in Sources */,
 				B138A7EE264F1855000F28CE /* MVVMCoordinator.swift in Sources */,
 				B138A7D6264F13BE000F28CE /* ViewCodable.swift in Sources */,
+				B1E399E726530A5E0019C42D /* Viper_DetailProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

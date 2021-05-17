@@ -12,6 +12,7 @@ class TabBarViewController: UITabBarController {
     let mvvmCoordinator = MVVMCoordinator()
     let mvcCoordinator = MVCCoordinator()
     let mvpCoordinator = MVPCoordinator()
+    let viperCoordinator = ViperCoordinator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +23,15 @@ class TabBarViewController: UITabBarController {
         let controllers = [
             mvvmCoordinator.rootNavigationController,
             mvcCoordinator.rootNavigationController,
-            mvpCoordinator.rootNavigationController
+            mvpCoordinator.rootNavigationController,
+            viperCoordinator.rootNavigationController
         ]
         
         let tabBarTitle = [
             "MVVM",
             "MVC",
-            "MVP"
+            "MVP",
+            "Viper"
         ]
 
         for (index, controller) in controllers.enumerated() {

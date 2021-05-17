@@ -7,6 +7,7 @@ O objetivo desse repositório é a compreensão e entendimento de multiplas arqu
 - MVVM 
 - MVC 
 - MVP 
+- Viper
 
 ### Links
 
@@ -101,3 +102,42 @@ O objetivo desse repositório é a compreensão e entendimento de multiplas arqu
 
 ![imagem](./Sources/mvp.png)
 
+## Viper
+
+### Links
+- https://medium.com/cr8resume/viper-architecture-for-ios-project-with-simple-demo-example-7a07321dbd29
+- https://medium.com/@smalam119/viper-design-pattern-for-ios-application-development-7a9703902af6
+
+### Como funciona?
+
+É divido em 4 partes:
+- View (ViewController + View)
+- Interactor
+- Presenter
+- Entity
+- Router
+
+#### View
+
+- Responsável pelos elementos de ui
+
+#### Interactor
+
+- É responsável pelas requests e regras de negócio.
+
+#### Presenter
+
+- Responsável por injetar e modificar a View, contem as regras de negócio, e é responsável também pelas requests.
+
+#### Entity
+
+- Responsável pelos dados
+
+#### Router
+
+- Responsável pelos transição entre as telas
+
+
+### Estrutura no projeto
+
+![imagem](./Sources/viper.png)
