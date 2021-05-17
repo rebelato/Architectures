@@ -36,6 +36,7 @@
 		B138A857264F2E53000F28CE /* MVP_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138A856264F2E53000F28CE /* MVP_ViewController.swift */; };
 		B138A85C264F2E5F000F28CE /* MVP_Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138A85B264F2E5F000F28CE /* MVP_Presenter.swift */; };
 		B138A862264F3089000F28CE /* MVPCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138A861264F3089000F28CE /* MVPCoordinator.swift */; };
+		B1B0CB3B26531B35002D4A55 /* Viper_DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0CB3A26531B35002D4A55 /* Viper_DetailInteractor.swift */; };
 		B1E399C5265307270019C42D /* Viper_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399C4265307270019C42D /* Viper_ViewController.swift */; };
 		B1E399CA2653073E0019C42D /* ViperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399C92653073E0019C42D /* ViperProtocols.swift */; };
 		B1E399CF2653074D0019C42D /* Viper_Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399CE2653074D0019C42D /* Viper_Presenter.swift */; };
@@ -46,6 +47,7 @@
 		B1E399EC26530B910019C42D /* Viper_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399EB26530B910019C42D /* Viper_DetailViewController.swift */; };
 		B1E399F126530B9D0019C42D /* Viper_DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399F026530B9D0019C42D /* Viper_DetailPresenter.swift */; };
 		B1E399F726530DC60019C42D /* ViperCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E399F626530DC60019C42D /* ViperCoordinator.swift */; };
+		B1E39A02265312810019C42D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E39A01265312810019C42D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,7 @@
 		B138A856264F2E53000F28CE /* MVP_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_ViewController.swift; sourceTree = "<group>"; };
 		B138A85B264F2E5F000F28CE /* MVP_Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_Presenter.swift; sourceTree = "<group>"; };
 		B138A861264F3089000F28CE /* MVPCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCoordinator.swift; sourceTree = "<group>"; };
+		B1B0CB3A26531B35002D4A55 /* Viper_DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_DetailInteractor.swift; sourceTree = "<group>"; };
 		B1E399C4265307270019C42D /* Viper_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_ViewController.swift; sourceTree = "<group>"; };
 		B1E399C92653073E0019C42D /* ViperProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperProtocols.swift; sourceTree = "<group>"; };
 		B1E399CE2653074D0019C42D /* Viper_Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_Presenter.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 		B1E399EB26530B910019C42D /* Viper_DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_DetailViewController.swift; sourceTree = "<group>"; };
 		B1E399F026530B9D0019C42D /* Viper_DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_DetailPresenter.swift; sourceTree = "<group>"; };
 		B1E399F626530DC60019C42D /* ViperCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperCoordinator.swift; sourceTree = "<group>"; };
+		B1E39A01265312810019C42D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,7 @@
 				B138A778264F0AFC000F28CE /* SceneDelegate.swift */,
 				B138A7D5264F13BE000F28CE /* ViewCodable.swift */,
 				B138A7DD264F13F0000F28CE /* UIView+AddViews.swift */,
+				B1E39A01265312810019C42D /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				B1E399E626530A5E0019C42D /* Viper_DetailProtocols.swift */,
 				B1E399EB26530B910019C42D /* Viper_DetailViewController.swift */,
 				B1E399F026530B9D0019C42D /* Viper_DetailPresenter.swift */,
+				B1B0CB3A26531B35002D4A55 /* Viper_DetailInteractor.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E399DF26530A330019C42D /* Viper_DetailRouter.swift in Sources */,
+				B1E39A02265312810019C42D /* Constants.swift in Sources */,
 				B138A7E3264F1411000F28CE /* MVVM_View.swift in Sources */,
 				B1E399C5265307270019C42D /* Viper_ViewController.swift in Sources */,
 				B138A7E8264F1540000F28CE /* MVVM_ViewModel.swift in Sources */,
@@ -508,6 +515,7 @@
 				B1E399CA2653073E0019C42D /* ViperProtocols.swift in Sources */,
 				B1E399D9265307620019C42D /* Viper_Router.swift in Sources */,
 				B138A819264F214E000F28CE /* MVCCoordinator.swift in Sources */,
+				B1B0CB3B26531B35002D4A55 /* Viper_DetailInteractor.swift in Sources */,
 				B138A777264F0AFC000F28CE /* AppDelegate.swift in Sources */,
 				B138A81E264F2217000F28CE /* MVVM_DetailViewController.swift in Sources */,
 				B138A85C264F2E5F000F28CE /* MVP_Presenter.swift in Sources */,

@@ -35,6 +35,7 @@ extension MVVMCoordinator {
         switch event as? MVVMEvent {
         case .detail(let movie):
             let vc = MVVM_DetailViewController(movie: movie)
+            vc.hidesBottomBarWhenPushed = true
             nextViewController(vc: vc, transitionStyle: .push)
         default:
             break
