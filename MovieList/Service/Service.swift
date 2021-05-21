@@ -10,6 +10,7 @@ import UIKit
 
 internal enum Endpoint: String {
     case popularMovies = "/movie/popular"
+    case image = "https://image.tmdb.org/t/p/original"
 }
 
 protocol ServiceProtocol {
@@ -26,12 +27,13 @@ class Service: ServiceProtocol {
     }
     
     internal func getPopularMovies(completion: @escaping(Swift.Result<MovieList, NetworkError>) -> Void) {
-        let endpoint = "https://api.themoviedb.org/3/movie/popular?api_key=dcfdbbf8648cddebeb0decb1f27aca9a&language=pt-BR&page=1"
+        let endpoint = transformToURL(endpoint: .popularMovies)
         service.request(with: endpoint, completion: completion)
     }
     
-    internal func getImageMovie(with url: String, completion: @escaping (Result<UIImage?, NetworkError>) -> Void) {
-        service.downloadImage(with: url, completion: completion)
+    internal func getImageMovie(with pathImage: String, completion: @escaping (Result<UIImage?, NetworkError>) -> Void) {
+        let endpoint = Endpoint.image.rawValue + pathImage
+        service.downloadImage(with: endpoint, completion: completion)
     }
 }
 

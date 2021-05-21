@@ -34,7 +34,7 @@ class MVVM_DetailViewController: UIViewController {
     }
     
     private func loadData() {
-        service.getImageMovie(with: "https://image.tmdb.org/t/p/original\(movie.poster_path)") { result in
+        service.getImageMovie(with: movie.poster_path) { result in
             switch result {
             case .success(let posterMovie):
                 DispatchQueue.main.async {
