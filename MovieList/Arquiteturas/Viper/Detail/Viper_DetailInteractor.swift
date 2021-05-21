@@ -18,7 +18,7 @@ internal class Viper_DetailInteractor: DetailPresenterToInteractorProtocol {
     }
     
     internal func getPoster(movie: Movie, with url: String) {
-        service.getImageMovie(with: "https://image.tmdb.org/t/p/original\(movie.poster_path)") { result in
+        service.getImageMovie(with: movie.poster_path) { result in
             switch result {
             case .success(let poster):
                 DispatchQueue.main.async {
